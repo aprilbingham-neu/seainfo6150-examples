@@ -1,19 +1,5 @@
 # INFO6150 web app
-Repository of assignments/labs webapp
-
-# Validator bookmarklet
-Install this bookmarklet
-
-Make a new bookmark in your browser (right-click on the [bookmarks bar](https://support.google.com/chrome/answer/95745?hl=en) and click `Add Page...`)
-  - For the "Name" you might put "Validate HTML".
-  - Copy the code block below, paste this into the "Location" of a new bookmark.
-
-```
-javascript:void%20function(){javascript:(async%20function(){const%20a=document.querySelector(%22html%22).cloneNode(!0),b=document.createElement(%22div%22);b.appendChild(a);const%20c=`%3C!DOCTYPE%20html%3E${b.innerHTML}`.replace(/style%20type=\%22text\/css\%22/g,%22style%22),d=await%20fetch(`http://localhost:3000/nu/%23text-area`,{method:%22POST%22,cache:%22no-cache%22,mode:%22cors%22,headers:{%22Content-Type%22:%22text/html;%20charset=UTF-8%22,%22User-Agent%22:navigator.userAgent},referrerPolicy:%22no-referrer%22,body:c}),e=await%20d.text(),f=window.open(%22about:blank%22,%22%22,%22width=700,height=500%22);let%20g=e.replace(%22style.css%22,%22https://validator.w3.org/nu/style.css%22);g=g.replace(/\%3Cform(.*)form\%3E/g,%22%22),f.document.write(g)})()}();
-```
-
-When you click the bookmark while viewing a page in your web app, a window will be opened that will validate your HTML with W3C Validator (http://validator.w3.org).
-
+Repository of examples webapp
 
 # Github guide
 We will use github repos throughout the course. If you are not familiar with git, or could use a refresher on how to use git, this is an excellent starter guide: https://guides.github.com/activities/hello-world/
@@ -21,20 +7,18 @@ We will use github repos throughout the course. If you are not familiar with git
 
 # View the demo components
 Visit the following URLs with the webapp running to view the various demos: 
-* http://localhost:3000/demo/concepts 
-* http://localhost:3000/demo/hello-user
-* http://localhost:3000/demo/hello-user-class
-* http://localhost:3000/demo/adding
-* http://localhost:3000/demo/adding-hooks
-* http://localhost:3000/demo/list
-* http://localhost:3000/demo/cssmodules
-* http://localhost:3000/demo/edgar
-* http://localhost:3000/demo/grid
+* http://localhost:3000/concepts 
+* http://localhost:3000/hello-user
+* http://localhost:3000/hello-user-class
+* http://localhost:3000/adding
+* http://localhost:3000/adding-hooks
+* http://localhost:3000/list
+* http://localhost:3000/cssmodules
+* http://localhost:3000/edgar
 
-
-# Forking class repo and setting upstream remote
+# Forking examples repo and setting upstream remote
 1. Make sure you have git installed: https://git-scm.com/downloads
-2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-webapp
+2. Go to the git repo for this class: https://github.com/aprilbingham-neu/seainfo6150-examples
 3. Click “Fork” to create your copy of the repo
 4. Click the “Code” to get a link to copy your fork on your computer
 5. Click “Use HTTPS”
@@ -42,48 +26,19 @@ Visit the following URLs with the webapp running to view the various demos:
 7. Open command line/terminal window and use these commands in a directory where you have admin permissions
 ```
 git clone [copied link]
-cd seainfo6150-webapp
-git remote add upstream https://github.com/aprilbingham-neu/seainfo6150-webapp
-```
-
-# Looking at a list of all your branches
-```
-cd seainfo6150-webapp
-git branch
-```
-
-# Creating a branch from master
-```
-cd seainfo6150-webapp
-git checkout master
-git pull origin master
-git checkout --b [new branch name]
-```
-
-# Creating a branch from a branch other than master
-```
-cd seainfo6150-webapp
-git checkout [branch to create branch from]
-git checkout --b [new branch name]
-```
-
-# Pushing your changes to your fork
-Make changes to your branch, then
-```
-git add .
-git commit -m “[commit name]”
-git push origin [branch name]
+cd seainfo6150-examples
+git remote add upstream https://github.com/aprilbingham-neu/seainfo6150-examples
 ```
 
 # Pulling updates from main repo
 ```
-cd seainfo6150-webapp
+cd seainfo6150-examples
 git pull upstream master
 ```
 
 # Running the app for the first time
 ```
-cd seainfo6150-webapp
+cd seainfo6150-examples
 npm install
 npm start
 ```
