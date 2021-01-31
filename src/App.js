@@ -9,6 +9,13 @@ import List from "./component-examples/List.jsx";
 import CSSModule from "./component-examples/CSSModule/CSSModule.jsx";
 import CSSModule2 from "./component-examples/CSSModule2/CSSModule2.jsx";
 import Edgar from "./component-examples/EdgarAllenPoe/EdgarAllenPoeArticle.jsx";
+import Gradients from "./component-examples/Gradients/Gradients.jsx";
+import BoxShadows from "./component-examples/BoxShadows/BoxShadows.jsx";
+import CSSAnimation from "./component-examples/CSSAnimation/CSSAnimation.jsx";
+import ZIndex from "./component-examples/ZIndex/ZIndex.jsx";
+import AbsolutePositioning from "./component-examples/AbsolutePositioning/AbsolutePositioning.jsx";
+import MarginsAndPadding from "./component-examples/MarginsAndPadding/MarginsAndPadding.jsx";
+
 import styles from "./component-examples/examples.module.css";
 
 const App = (props) => {
@@ -62,8 +69,26 @@ const App = (props) => {
               <Link to={`${url}cssmodules`}>CSS Modules</Link>
             </li>{" "}
             <li className={styles.listItem}>
-              <Link to={`${url}edgar`}>Edgar Allen Poe HTML</Link>
+              <Link to={`${url}edgar`}>Edgar Allen Poe</Link>
             </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}margins-padding`}>Margins and Padding</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}absolute-positioning`}>Absolute positioning</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}z-index`}>Z-index</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}gradients`}>Gradients</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}box-shadows`}>Box Shadows</Link>
+            </li>
+            <li className={styles.listItem}>
+              <Link to={`${url}css-animation`}>CSS Animation</Link>
+            </li>        
           </ul>
         </nav>
       </header>
@@ -99,6 +124,24 @@ const App = (props) => {
         </Route>
         <Route path={`${url}edgar`} exact>
           <Edgar />
+        </Route>
+        <Route path={`${url}gradients`} exact>
+          <Gradients />
+        </Route>
+        <Route path={`${url}box-shadows`} exact>
+          <BoxShadows />
+        </Route>
+        <Route path={`${url}css-animation`} exact>
+          <CSSAnimation />
+        </Route>
+        <Route path={`${url}z-index`} exact>
+          <ZIndex />
+        </Route>
+        <Route path={`${url}absolute-positioning`} exact>
+          <AbsolutePositioning />
+        </Route>
+        <Route path={`${url}margins-padding`} exact>
+          <MarginsAndPadding />
         </Route>
         <Route path={`${url}baz`} exact>
           <div>Hello</div>

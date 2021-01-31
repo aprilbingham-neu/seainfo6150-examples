@@ -1,0 +1,16 @@
+/* .foo will be at top corner of document
+.bar will be at top corner of .relative parent */
+.container div {
+  height: 150px;
+  width: 200px;
+  border: 1px solid black;
+}
+.relative {
+  position: relative;
+}
+
+.container p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

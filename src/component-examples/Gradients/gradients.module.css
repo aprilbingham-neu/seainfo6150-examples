@@ -1,0 +1,66 @@
+.container h3 {
+  height: 10rem;
+}
+
+.linearGradient {
+  background-image: linear-gradient(#c00, green);
+}
+.linearGradientLTR {
+  background-image: linear-gradient(to right, #c00, green);
+}
+.linearGradientTopLeftBottomRight{
+  background-image: linear-gradient(to bottom right, #c00, green);
+}
+.linearGradientTopRightBottomLeft {
+  background-image: linear-gradient(315deg, #c00, green);
+}
+.linearGradientRainbow {
+background-image: linear-gradient(to right, red, red 25%,  yellow 25%, yellow 50%, blue 50%, blue 75%, green 75%);
+}
+.linearGradientColorStop {
+  background-image: linear-gradient(
+    to right,
+    #c00,
+    green 15%
+  );
+}
+.linearGradientColorStopLine {
+  background-image: linear-gradient(
+    to right,
+    #c00,
+    #c00 20rem,
+    green 20rem
+  );
+}
+
+.radialGradient {
+  background-image: radial-gradient(red, green);
+}
+
+.radialGradientCircle {
+  height: 30rem;
+  background-image: radial-gradient(circle, red, green);
+}
+
+.radialGradientRainbow {
+  height: 30rem;
+  background-image: radial-gradient(circle,
+      red,
+      #f06d06,
+      rgb(255, 255, 0),
+      green);
+}
+
+.radialGradientTopRight {
+  height: 30rem;
+  background-image: radial-gradient(circle at top right, red, green);
+}
+
+.radialGradientColorStopLine {
+  background-image: radial-gradient(circle,
+      #c00,
+      #c00 5rem,
+      green 5rem);
+      height:30rem;
+      margin-bottom: 200px;
+}

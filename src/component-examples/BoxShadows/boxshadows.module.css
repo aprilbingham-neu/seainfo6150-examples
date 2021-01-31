@@ -1,0 +1,20 @@
+.container div {
+  height: 10rem;
+  width: 10rem;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+  background: #eee;
+}
+
+.shadowZeroOffset { box-shadow: 0 0 10px 10px red; }
+.shadowPositivePositive { box-shadow: 10px 10px 10px 10px red; }
+.shadowPositiveNegative { box-shadow: 10px -10px 10px 10px red; }
+.shadowNegativeNegative { box-shadow: -10px 10px 10px 10px red; }
+.shadowNegativeNegative { box-shadow: -10px -10px 10px 10px red; }
+.shadowZeroBlur { box-shadow: 10px 10px 0 10px red; }
+.shadowZeroSpread { box-shadow: 0 0 10px 0 red; }
+.shadowColor { box-shadow: 10px 10px 10px rgba(0, 0, 255, .5); }
+.shadowInset { box-shadow: inset 0 0 10px 10px red; }
+.shadowMultiple {
+  box-shadow: 10px 10px 10px 10px red, -5px -5px 5px 5px rgba(0, 0, 255, .5);
+}

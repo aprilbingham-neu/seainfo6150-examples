@@ -1,0 +1,24 @@
+/* in .no-z-index, all 3 are positioned in the same place, so .baz will appear on top because it is 3rd */
+/* in .z-index, all 3 are positioned in the same place, but .foo will appear on top because it has been given a higher z-index to push it on top of the others */
+
+.container div {
+  position: relative;
+  height: 50px;
+}
+.container p {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.foo {
+  background: red;
+}
+.bar {
+  background: green;
+}
+.baz {
+  background: blue;
+}
+.zindex .foo {
+  z-index: 1;
+}
