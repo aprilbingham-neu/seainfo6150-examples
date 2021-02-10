@@ -15,6 +15,13 @@ Visit the following URLs with the webapp running to view the various demos:
 * http://localhost:3000/list
 * http://localhost:3000/cssmodules
 * http://localhost:3000/edgar
+* http://localhost:3000/margins-padding
+* http://localhost:3000/absolute-positioning
+* http://localhost:3000/z-index
+* http://localhost:3000/gradients
+* http://localhost:3000/box-shadows
+* http://localhost:3000/css-animation
+
 
 # Forking examples repo and setting upstream remote
 1. Make sure you have git installed: https://git-scm.com/downloads

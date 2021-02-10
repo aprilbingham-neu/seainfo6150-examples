@@ -156,6 +156,32 @@ const EdgarAllenPoeArticle = () => {
               <sup>3</sup>)
             </p>
           </section>
+          <aside>
+            <h3>Citations</h3>
+            <ol>
+              <li>
+                <a href="#cite-1">Allen, page 2</a>
+              </li>
+              <li>
+                <a href="#cite-2">Fox</a>
+              </li>
+              <li>
+                <a href="#cite-3">Benitez, page 34</a>
+              </li>
+              <li>
+                <a href="#cite-4">Benton, page 120</a>
+              </li>
+              <li>
+                <a href="#cite-5">Bramsback, page 65</a>
+              </li>
+              <li>
+                <a href="#cite-6">Burns, page 87</a>
+              </li>
+              <li>
+                <a href="#cite-7">Burns, page 23</a>
+              </li>
+            </ol>
+          </aside>
           <aside className={styles.signupForm}>
             <header>
               <h3>
@@ -274,7 +300,11 @@ const EdgarAllenPoeArticle = () => {
 
             <div>
               Check out my website,
-              <a href="http://allaboutpoe.org" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://allaboutpoe.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 allaboutpoe.org
               </a>
               !
@@ -506,31 +536,6 @@ const EdgarAllenPoeArticle = () => {
           styles.pageFooter
         )}
       >
-        <h3>Citations</h3>
-        <ol>
-          <li>
-            <a href="#cite-1">Allen, page 2</a>
-          </li>
-          <li>
-            <a href="#cite-2">Fox</a>
-          </li>
-          <li>
-            <a href="#cite-3">Benitez, page 34</a>
-          </li>
-          <li>
-            <a href="#cite-4">Benton, page 120</a>
-          </li>
-          <li>
-            <a href="#cite-5">Bramsback, page 65</a>
-          </li>
-          <li>
-            <a href="#cite-6">Burns, page 87</a>
-          </li>
-          <li>
-            <a href="#cite-7">Burns, page 23</a>
-          </li>
-        </ol>
-
         <h3>Sources</h3>
         <ul>
           <li id="cite-1">
