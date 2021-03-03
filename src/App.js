@@ -143,9 +143,17 @@ const App = (props) => {
         <Route path={`${url}margins-padding`} exact>
           <MarginsAndPadding />
         </Route>
-        <Route path={`${url}baz`} exact>
-          <div>Hello</div>
-        </Route>
+        <Route
+          path={`${url}baz/:someId`}
+          render={({ match, location, history }) => {
+            // getting the parameters from the url and passing
+            // down to the component as props
+            console.log("match", match);
+            console.log("location", location);
+            console.log("history", history);
+            return <div>Hello, someId equals {match.params.someId}</div>
+          }}
+        />
         <Route path={`${url}`}>
           <div>Welcome</div>
         </Route>
