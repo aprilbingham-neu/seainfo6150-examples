@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  border: 1px solid #000;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.container > div {
+  background: #ccc;
+  text-align: center;
+  width: 100px;
+  border: 1px solid #999;
+}
+
+.tallContainer {
+  height: 200px;
+}
+
+.wrapContainer {
+  flex-flow: row wrap;
+}
+.noWrapContainer {
+  flex-flow: row nowrap;
+}
+.wrapReverseContainer {
+  flex-flow: row wrap-reverse;
+}
+.reverseContainer {
+  flex-flow: row-reverse;
+}
+.justifyStartContainer {
+  justify-content: flex-start;
+}
+.justifyEndContainer {
+  justify-content: flex-end;
+}
+.justifyCenterContainer {
+  justify-content: center;
+}
+.justifyAroundContainer {
+  justify-content: space-around;
+}
+.justifyBetweenContainer {
+  justify-content: space-between;
+}
+.justifyEvenlyContainer {
+  justify-content: space-evenly;
+}
+
+.alignItemsStartContainer {
+  align-items: flex-start;
+}
+.alignItemsEndContainer {
+  align-items: flex-end;
+}
+.alignItemsCenterContainer {
+  align-items: center;
+}
+.alignItemsBaselineContainer {
+  align-items: baseline;
+}
+.alignItemsStretchContainer {
+  align-items: stretch;
+}
+
+.alignContentStartContainer {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 500px;
+}
+.alignContentEndContainer {
+  flex-wrap: wrap;
+  align-content: flex-end;
+  width: 500px;
+}
+.alignContentCenterContainer {
+  flex-wrap: wrap;
+  align-content: center;
+  width: 500px;
+}
+.alignContentAroundContainer {
+  flex-wrap: wrap;
+  align-content: space-around;
+  width: 500px;
+}
+.alignContentBetweenContainer {
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 500px;
+}
+.alignContentStretchContainer {
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 500px;
+}
+
+.one {
+  order: 3;
+}
+.two {
+  order: 4;
+}
+.three {
+  order: 5;
+}
+.four {
+  order: 1;
+}
+.five {
+  order: 2;
+}
+
+.growContainer {
+  width: 1002px;
+}
+
+.growLastChildContainer > div:last-child {
+  flex-grow: 1;
+}
+.growThirdChildContainer > div:nth-child(3) {
+  flex-grow: 1;
+}
+.growAllChildrenContainer > div {
+  flex-grow: 1;
+}
+.growMultiChildrenContainer > div:nth-child(1) {
+  flex-grow: 1;
+}
+.growMultiChildrenContainer > div:nth-child(2) {
+  flex-grow: 2;
+}
+.growMultiChildrenContainer > div:nth-child(3) {
+  flex-grow: 3;
+}
+
+.shrinkContainer {
+  width: 502px;
+}
+.shrinkContainer > div {
+  width: 200px;
+  flex-shrink: 0;
+}
+.shrinkLastChildContainer > div:last-child {
+  flex-shrink: 1;
+}
+.shrinkThirdChildContainer > div:nth-child(3) {
+  flex-shrink: 1;
+}
+.shrinkAllChildrenContainer > div {
+  flex-shrink: 1;
+}
+.shrinkMultiChildrenContainer > div:nth-child(1) {
+  flex-shrink: 1;
+}
+.shrinkMultiChildrenContainer > div:nth-child(2) {
+  flex-shrink: 2;
+}
+.shrinkMultiChildrenContainer > div:nth-child(3) {
+  flex-shrink: 3;
+}
+
+/* flex basis */
+.basisContainer {
+  width: 1002px;
+}
+.basisContainer > div {
+  flex-basis: 500px;
+}
+
+/* align self */
+.basisAlignSelfContainer {
+  align-items: flex-start;
+}
+.basisAlignSelfStartContainer > div:nth-child(1) {
+  align-self: flex-start;
+}
+.basisAlignSelfEndContainer > div:nth-child(1) {
+  align-self: flex-end;
+}
+.basisAlignSelfCenterContainer > div:nth-child(1) {
+  align-self: center;
+}
+.basisAlignSelfStretchContainer {
+  align-items: center;
+}
+
+.basisAlignSelfStretchContainer > div:nth-child(1) {
+  align-self: stretch;
+}

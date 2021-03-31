@@ -15,6 +15,9 @@ import CSSAnimation from "./component-examples/CSSAnimation/CSSAnimation.jsx";
 import ZIndex from "./component-examples/ZIndex/ZIndex.jsx";
 import AbsolutePositioning from "./component-examples/AbsolutePositioning/AbsolutePositioning.jsx";
 import MarginsAndPadding from "./component-examples/MarginsAndPadding/MarginsAndPadding.jsx";
+import Columns from "./component-examples/Columns/Columns.jsx";
+import Flexbox from "./component-examples/Flexbox/Flexbox.jsx";
+import Grid from "./component-examples/Grid/Grid.jsx";
 
 import styles from "./component-examples/examples.module.css";
 
@@ -89,6 +92,15 @@ const App = (props) => {
             <li className={styles.listItem}>
               <Link to={`${url}css-animation`}>CSS Animation</Link>
             </li>        
+            <li className={styles.listItem}>
+              <Link to={`${url}columns`}>Columns</Link>
+            </li>        
+            <li className={styles.listItem}>
+              <Link to={`${url}flexbox`}>Flexbox</Link>
+            </li>        
+            <li className={styles.listItem}>
+              <Link to={`${url}grid`}>Grid</Link>
+            </li>        
           </ul>
         </nav>
       </header>
@@ -142,6 +154,15 @@ const App = (props) => {
         </Route>
         <Route path={`${url}margins-padding`} exact>
           <MarginsAndPadding />
+        </Route>
+        <Route path={`${url}columns`} exact>
+          <Columns />
+        </Route>
+        <Route path={`${url}flexbox`} exact>
+          <Flexbox />
+        </Route>
+        <Route path={`${url}grid`} exact>
+          <Grid />
         </Route>
         <Route
           path={`${url}baz/:someId`}
