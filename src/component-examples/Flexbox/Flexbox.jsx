@@ -280,7 +280,7 @@ const Flexbox = () => {
 
       <h2>Flex grow last child</h2>
 
-      <div class={classnames(styles.container, styles.growLastChildContainer)}>
+      <div class={classnames(styles.container, styles.growContainer, styles.growLastChildContainer)}>
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -290,7 +290,7 @@ const Flexbox = () => {
 
       <h2>Flex grow third child</h2>
 
-      <div class={classnames(styles.container, styles.growThirdChildContainer)}>
+      <div class={classnames(styles.container, styles.growContainer, styles.growThirdChildContainer)}>
         <div>1</div>
         <div>2</div>
         <div>3</div>
@@ -300,7 +300,7 @@ const Flexbox = () => {
       <h2>Flex grow all children</h2>
 
       <div
-        class={classnames(styles.container, styles.growAllChildrenContainer)}
+        class={classnames(styles.container, styles.growContainer, styles.growAllChildrenContainer)}
       >
         <div>1</div>
         <div>2</div>
@@ -312,7 +312,7 @@ const Flexbox = () => {
       <h2>Flex grow multi children</h2>
 
       <div
-        class={classnames(styles.container, styles.growMultiChildrenContainer)}
+        class={classnames(styles.container, styles.growContainer, styles.growMultiChildrenContainer)}
       >
         <div>1</div>
         <div>2</div>
