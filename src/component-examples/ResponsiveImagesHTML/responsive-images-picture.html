@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div>
+      <section>
+        <h2>Responsive image with picture</h2>
+        <picture>
+          <source
+            media="(max-width: 300px)"
+            srcset="https://placekitten.com/200/400 200w"
+          />
+          <source
+            media="(max-width: 600px)"
+            srcset="https://placekitten.com/400/400 400w"
+          />
+          <source
+            media="(max-width: 1500px)"
+            srcset="https://placekitten.com/800/400 800w"
+          />
+          <img src="https://placekitten.com/400/400" alt="This is a kitten" />
+        </picture>
+      </section>
+      </div>
+
+
+  </body>
+</html>

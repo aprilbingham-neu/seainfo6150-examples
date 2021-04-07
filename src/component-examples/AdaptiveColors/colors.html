@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function reportWindowSize() {
+        document.querySelector(
+          "#screenWidth"
+        ).innerHTML = `${document.body.clientWidth}px`;
+      }
+
+      window.onresize = reportWindowSize;
+      winodw.onload = reportWindowSize;
+    </script>
+    <style>
+      body {
+        background: #ccc;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      @media (min-width: 400px) {
+        body {
+          background: #c00;
+        }
+      }
+
+      @media (min-width: 500px) {
+        body {
+          background: #0c0;
+        }
+      }
+
+      @media (min-width: 700px) {
+        body {
+          background: #00c;
+        }
+      }
+
+      @media (min-width: 900px) and (max-width: 1200px) {
+        body {
+          background: #000;
+        }
+      }
+
+      #screenWidth {
+        font-size: 9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="screenWidth"></div>
+  </body>
+</html>
