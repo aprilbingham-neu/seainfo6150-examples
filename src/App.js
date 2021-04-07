@@ -19,6 +19,7 @@ import Columns from "./component-examples/Columns/Columns.jsx";
 import Flexbox from "./component-examples/Flexbox/Flexbox.jsx";
 import Grid from "./component-examples/Grid/Grid.jsx";
 import ResponsiveBackgroundImages from "./component-examples/ResponsiveBackgroundImages/ResponsiveBackgroundImages.jsx";
+import AdaptiveGrid from "./component-examples/AdaptiveGrid/AdaptiveGrid.jsx";
 
 import styles from "./component-examples/examples.module.css";
 
@@ -105,6 +106,9 @@ const App = (props) => {
             <li className={styles.listItem}>
               <Link to={`${url}responsive-bg-images`}>Responsive background images</Link>
             </li>              
+            <li className={styles.listItem}>
+              <Link to={`${url}adaptive-grid`}>Adaptive grid</Link>
+            </li>              
           </ul>
         </nav>
       </header>
@@ -170,6 +174,9 @@ const App = (props) => {
         </Route>
         <Route path={`${url}responsive-bg-images`} exact>
           <ResponsiveBackgroundImages />
+        </Route>
+        <Route path={`${url}adaptive-grid`} exact>
+          <AdaptiveGrid />
         </Route>
         <Route
           path={`${url}baz/:someId`}

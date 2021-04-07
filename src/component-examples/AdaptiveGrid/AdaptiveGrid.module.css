@@ -1,0 +1,45 @@
+@supports not (display: grid) {
+  .gridContainer div {
+    columns: 3 5em;
+  }
+}
+
+@supports (display: grid) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 40px;
+  }
+
+  .gridContainer div {
+    border: 1px solid #000;
+    padding: 0 30px;
+  }
+
+  .gridContainer p {
+    margin: 20px 0 0;
+  }
+
+  @media only print {
+    .gridContainer {
+      font-size: 300px;
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    .gridContainer {
+      font-size: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+    .gridContainer div {
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .gridContainer {
+      font-size: 24px;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
